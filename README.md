@@ -1,4 +1,4 @@
-# Boston House Price Prediction
+# Boston House Price Prediction   https://boston-house-price-prediction-pt8rkg7nqc4fm7ept9jnuw.streamlit.app/
 
 An end-to-end machine learning project for estimating residential property prices from a supplied tabular dataset. The project is designed as a realistic junior-level ML engineering portfolio project: data validation, EDA, leakage-safe preprocessing, model comparison, cross-validation, hyperparameter tuning, model persistence, and a Streamlit inference interface are separated into maintainable modules.
 
