@@ -41,7 +41,7 @@ jobs:
             const page = await browser.newPage();
 
             await page.goto(
-              "https://appkeepaliveworkflow-hjhjdhjhjgyt.streamlit.app",
+              "https://boston-house-price-prediction-pt8rkg7nqc4fm7ept9jnuw.streamlit.app/",
               {
                 waitUntil: "networkidle",
                 timeout: 60000
