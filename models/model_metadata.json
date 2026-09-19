@@ -1,0 +1,248 @@
+{
+  "dataset": {
+    "rows": 506,
+    "columns": 14,
+    "column_names": [
+      "CRIM",
+      "ZN",
+      "INDUS",
+      "CHAS",
+      "NOX",
+      "RM",
+      "AGE",
+      "DIS",
+      "RAD",
+      "TAX",
+      "PTRATIO",
+      "B",
+      "LSTAT",
+      "MEDV"
+    ],
+    "dtypes": {
+      "CRIM": "float64",
+      "ZN": "float64",
+      "INDUS": "float64",
+      "CHAS": "float64",
+      "NOX": "float64",
+      "RM": "float64",
+      "AGE": "float64",
+      "DIS": "float64",
+      "RAD": "int64",
+      "TAX": "int64",
+      "PTRATIO": "float64",
+      "B": "float64",
+      "LSTAT": "float64",
+      "MEDV": "float64"
+    },
+    "missing_values": {
+      "CRIM": 20,
+      "ZN": 20,
+      "INDUS": 20,
+      "CHAS": 20,
+      "AGE": 20,
+      "LSTAT": 20
+    },
+    "duplicate_rows": 0,
+    "non_finite_numeric_values": {
+      "CRIM": 0,
+      "ZN": 0,
+      "INDUS": 0,
+      "CHAS": 0,
+      "NOX": 0,
+      "RM": 0,
+      "AGE": 0,
+      "DIS": 0,
+      "RAD": 0,
+      "TAX": 0,
+      "PTRATIO": 0,
+      "B": 0,
+      "LSTAT": 0,
+      "MEDV": 0
+    },
+    "negative_value_flags": {},
+    "outlier_counts_iqr": {
+      "CRIM": 65,
+      "ZN": 63,
+      "INDUS": 0,
+      "CHAS": 0,
+      "NOX": 0,
+      "RM": 30,
+      "AGE": 0,
+      "DIS": 5,
+      "RAD": 0,
+      "TAX": 0,
+      "PTRATIO": 15,
+      "B": 77,
+      "LSTAT": 7,
+      "MEDV": 40
+    },
+    "index_columns": [],
+    "target_column": "MEDV",
+    "numerical_columns": [
+      "CRIM",
+      "ZN",
+      "INDUS",
+      "CHAS",
+      "NOX",
+      "RM",
+      "AGE",
+      "DIS",
+      "RAD",
+      "TAX",
+      "PTRATIO",
+      "B",
+      "LSTAT"
+    ],
+    "categorical_columns": []
+  },
+  "feature_names": [
+    "CRIM",
+    "ZN",
+    "INDUS",
+    "CHAS",
+    "NOX",
+    "RM",
+    "AGE",
+    "DIS",
+    "RAD",
+    "TAX",
+    "PTRATIO",
+    "B",
+    "LSTAT"
+  ],
+  "target_column": "MEDV",
+  "model_selection_metric": "mean 5-fold CV RMSE",
+  "baseline_best_model": "Gradient Boosting",
+  "tuned_model": "Gradient Boosting",
+  "tuning_cv_rmse": 3.6194120624137156,
+  "best_params": {
+    "model__learning_rate": 0.05,
+    "model__max_depth": 3,
+    "model__min_samples_leaf": 1,
+    "model__n_estimators": 200
+  },
+  "final_test_metrics": {
+    "MAE": 1.9741476311857649,
+    "MSE": 7.716389998550149,
+    "RMSE": 2.777839087951307,
+    "R2": 0.8947771454572239
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "cv_folds": 5
+  },
+  "numerical_features": [
+    "CRIM",
+    "ZN",
+    "INDUS",
+    "CHAS",
+    "NOX",
+    "RM",
+    "AGE",
+    "DIS",
+    "RAD",
+    "TAX",
+    "PTRATIO",
+    "B",
+    "LSTAT"
+  ],
+  "categorical_features": [],
+  "feature_defaults": {
+    "CRIM": 0.26139,
+    "ZN": 0.0,
+    "INDUS": 8.56,
+    "CHAS": 0.0,
+    "NOX": 0.538,
+    "RM": 6.21,
+    "AGE": 76.95,
+    "DIS": 3.17575,
+    "RAD": 5.0,
+    "TAX": 330.0,
+    "PTRATIO": 18.7,
+    "B": 391.30499999999995,
+    "LSTAT": 10.97
+  },
+  "feature_ranges": {
+    "CRIM": {
+      "min": 0.00906,
+      "max": 88.9762,
+      "mean": 3.601730803108808,
+      "median": 0.26139
+    },
+    "ZN": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 11.506459948320414,
+      "median": 0.0
+    },
+    "INDUS": {
+      "min": 0.74,
+      "max": 27.74,
+      "mean": 10.879481865284973,
+      "median": 8.56
+    },
+    "CHAS": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.07216494845360824,
+      "median": 0.0
+    },
+    "NOX": {
+      "min": 0.385,
+      "max": 0.871,
+      "mean": 0.5564841584158416,
+      "median": 0.538
+    },
+    "RM": {
+      "min": 3.863,
+      "max": 8.78,
+      "mean": 6.315891089108911,
+      "median": 6.21
+    },
+    "AGE": {
+      "min": 2.9,
+      "max": 100.0,
+      "mean": 68.35541237113402,
+      "median": 76.95
+    },
+    "DIS": {
+      "min": 1.1296,
+      "max": 12.1265,
+      "mean": 3.8081950495049504,
+      "median": 3.17575
+    },
+    "RAD": {
+      "min": 1.0,
+      "max": 24.0,
+      "mean": 9.356435643564357,
+      "median": 5.0
+    },
+    "TAX": {
+      "min": 187.0,
+      "max": 711.0,
+      "mean": 404.0321782178218,
+      "median": 330.0
+    },
+    "PTRATIO": {
+      "min": 12.6,
+      "max": 22.0,
+      "mean": 18.318316831683166,
+      "median": 18.7
+    },
+    "B": {
+      "min": 0.32,
+      "max": 396.9,
+      "mean": 356.27834158415845,
+      "median": 391.30499999999995
+    },
+    "LSTAT": {
+      "min": 1.73,
+      "max": 37.97,
+      "mean": 12.479640102827764,
+      "median": 10.97
+    }
+  },
+  "model_file": "models\\house_price_model.pkl",
+  "preprocessing_file": "models\\preprocessing_pipeline.pkl"
+}
